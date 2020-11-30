@@ -14,11 +14,15 @@
   --ball-height: 200px;
   --shadow-height: 10px;
   --shadow-width: 230px;
+  --top-position: translate(0%, 10%);
+  --bottom-position: translate(0%, 70%);
 }
 #home {
-  height: 100vh;
 }
+
 .container {
+  height: 750px;
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -26,7 +30,7 @@
 }
 
 .ball-container {
-  position: absolute;
+  height: 100vh;
   top: 9%;
   left: 50%;
   animation: bounce 3s infinite;
@@ -34,7 +38,6 @@
 
 .ball {
   background-color: var(--ball-color);
-
   border-radius: 50%;
   width: var(--ball-width);
   height: var(--ball-height);
@@ -56,13 +59,22 @@
 
 @keyframes bounce {
   0% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: var(--top-position);
+    -moz-transform: var(--top-position);
+    -o-transform: var(--top-position);
+    transform: var(--top-position);
   }
   50% {
-    transform: translate(-50%, 430%);
+    -webkit-transform: var(--bottom-position);
+    -moz-transform: var(--bottom-position);
+    -o-transform: var(--bottom-position);
+    transform: var(--bottom-position);
   }
   100% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: var(--top-position);
+    -moz-transform: var(--top-position);
+    -o-transform: var(--top-position);
+    transform: var(--top-position);
   }
 }
 
