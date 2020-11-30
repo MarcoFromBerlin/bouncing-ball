@@ -15,13 +15,14 @@
   --shadow-height: 10px;
   --shadow-width: 230px;
   --top-position: translate(0%, 10%);
-  --bottom-position: translate(0%, 70%);
+  --bottom-position: translate(0%, 74%);
 }
 #home {
+  display: block;
+  overflow: auto;
 }
 
 .container {
-  height: 750px;
   position: relative;
   display: flex;
   text-align: center;
@@ -59,95 +60,56 @@
 
 @keyframes bounce {
   0% {
-    -webkit-transform: var(--top-position);
-    -moz-transform: var(--top-position);
-    -o-transform: var(--top-position);
     transform: var(--top-position);
   }
   50% {
-    -webkit-transform: var(--bottom-position);
-    -moz-transform: var(--bottom-position);
-    -o-transform: var(--bottom-position);
     transform: var(--bottom-position);
   }
   100% {
-    -webkit-transform: var(--top-position);
-    -moz-transform: var(--top-position);
-    -o-transform: var(--top-position);
     transform: var(--top-position);
   }
 }
 
 @keyframes shadow {
   0% {
-    -webkit-transform: scale(0, 0);
-    -moz-transform: scale(0, 0);
-    -o-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 
   50% {
-    -webkit-transform: scale(1.1, 0.7);
-    -moz-transform: scale(1.1, 0.7);
-    -o-transform: scale(1.1, 0.7);
     transform: scale(1.1, 0.7);
     opacity: 1;
   }
 
   100% {
-    -webkit-transform: scale(0, 0);
-    -moz-transform: scale(0, 0);
-    -o-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 }
 
 @keyframes squeeze {
   0% {
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   25% {
-    -webkit-transform: scale(0.8, 1.1);
-    -moz-transform: scale(0.8, 1.1);
-    -o-transform: scale(0.8, 1.1);
     transform: scale(0.8, 1.1);
   }
   38% {
-    -webkit-transform: scale(0.8, 1.1);
-    -moz-transform: scale(0.8, 1.1);
-    -o-transform: scale(0.8, 1.1);
     transform: scale(0.8, 1.1);
   }
 
   50% {
-    -webkit-transform: scale(1.3, 0.8);
-    -moz-transform: scale(1.3, 0.8);
-    -o-transform: scale(1.3, 0.8);
     transform: scale(1.3, 0.8);
   }
 
   62% {
-    -webkit-transform: scale(0.8, 1.1);
-    -moz-transform: scale(0.8, 1.1);
-    -o-transform: scale(0.8, 1.1);
     transform: scale(0.8, 1.1);
   }
 
   75% {
-    -webkit-transform: scale(0.8, 1.1);
-    -moz-transform: scale(0.8, 1.1);
-    -o-transform: scale(0.8, 1.1);
     transform: scale(0.8, 1.1);
   }
 
   100% {
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
